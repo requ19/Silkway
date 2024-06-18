@@ -1,0 +1,55 @@
+.button {
+    width: 37px;
+    height: 37px;
+    border: 2px solid #A22030;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+}
+.icon::before,
+.icon::after,
+.icon span {
+    content: '';
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    height: 2px;
+    background-color: #A22030;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+.icon::before {
+    top: 0;
+    width: 20px;
+}
+.icon span {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 11px;
+}
+.icon::after {
+    bottom: 0;
+    width: 16px;
+}
+.button.active .icon::before {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 20px;
+}
+.button.active .icon span {
+    transform: translateY(-50%) rotate(-45deg);
+    width: 20px;
+}
+.button.active .icon::after {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+    width: 20px;
+}

@@ -1,0 +1,135 @@
+/* Reset.scss */
+
+/* Убираем все отступы и поля */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Устанавливаем основные стили для документа */
+html {
+  line-height: 1.15; /* Улучшает читаемость текста */
+  -webkit-text-size-adjust: 100%; /* Исправляет увеличение текста в некоторых браузерах */
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif; /* Устанавливает стандартный шрифт */
+}
+
+/* Удаляем стандартные стили заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* Удаляем стандартные стили для списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Удаляем стандартные стили для изображений */
+img {
+  border-style: none;
+}
+
+/* Устанавливаем стандартные стили для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Удаляем стандартные стили для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Устанавливаем стандартные стили для кнопок */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* Убираем стрелки в полях input[type="number"] в некоторых браузерах */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Убираем стрелки в полях input[type="number"] в Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Убираем стандартные стили для поля поиска */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* Убираем стандартные стили для области поиска */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Устанавливаем стандартные стили для полей input и кнопок */
+button,
+input {
+  overflow: visible;
+}
+
+/* Устанавливаем стандартные стили для кнопок */
+button,
+select {
+  text-transform: none;
+}
+
+/* Устанавливаем стандартные стили для поля button, [type="button"], [type="reset"], [type="submit"] */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* Убираем стандартные стили для кнопок в поле button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* Устанавливаем стандартные стили для поля button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* Убираем стандартные стили для областей textarea */
+textarea {
+  overflow: auto;
+}
+
+/* Устанавливаем стандартные стили для шаблона template */
+template {
+  display: none;
+}
+
+/* Устанавливаем стандартные стили для полей [hidden] */
+[hidden] {
+  display: none;
+}

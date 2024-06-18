@@ -1,0 +1,44 @@
+.sidebar {
+  width: 100%; 
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+.menuItem {
+  font-size: 16px;
+  color: rgba(29, 53, 87, 1);
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menuItem:hover {
+  color: #A22030;
+}
+
+.menuItem.active {
+  background-color: #A22030;
+  color: #ffffff;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px; 
+  
+}
+
+.menuItem.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px 0 0 20px; 
+  background: url('../../assets/images/Frame\ 1238.svg') 100%;
+  z-index: 0;
+}
+
+.menuItem span {
+  position: relative;
+  z-index: 1;
+}
