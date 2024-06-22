@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../../components/Header';
 import styles from './partners.module.scss';
-import partnerRoadImg from '../Images/partner-road.png'
-import partnerElectroImg from '../Images/partner-electro.png'
-import partnerGasGivingImg from '../Images/partners-gasGiving.png'
-import partnerWarmGivingImg from '../Images/partners-warmGiving.png'
-import partnerOwnCommunicationImg from '../Images/partners-ownCommunication.png'
-import partnerClearBuildImg from '../Images/partners-clearBuild.png'
+import Images from '../Images'
 
 const Partners = () => {
   // Инициализация массива состояний для каждого раздела
@@ -23,7 +18,9 @@ const Partners = () => {
 
   return (
     <>
+      {/*хэдер*/}
       <Header />
+        {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
         <h2 className={styles.title}>НАШИ ТЕХНИЧЕСКИЕ ПАРТНЕРЫ</h2>
         <div
@@ -33,6 +30,9 @@ const Partners = () => {
           <span className={styles.icon}></span>
         </div>
       </div>
+        {/*Конец дроп меню с заголовком */}
+
+        {/*Контент с текстом */}
       <div className={styles.content}>
         <p className={styles.text}>
           {sections[0] ? (
@@ -47,9 +47,11 @@ const Partners = () => {
             </>
           )}
         </p>
-        <img className={styles.img} src={partnerRoadImg} alt="Partner Road" />
+        <img className={styles.img} src={Images.partnerRoadImg} alt="Partner Road" />
       </div>
+        {/* Конец контента с текстом*/}
 
+        {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
         <h2 className={styles.title}>СТРОИТЕЛЬСТВО ДОРОГ И ТРАНСПОРТНЫХ КОММУНИКАЦИЙ</h2>
         <div
@@ -59,6 +61,9 @@ const Partners = () => {
           <span className={styles.icon}></span>
         </div>
       </div>
+       {/*Конец дроп меню с заголовком */}
+
+       {/*Контент с текстом */}
       <div className={styles.content}>
         <p className={styles.text}>
           {sections[1] ? (
@@ -75,9 +80,11 @@ const Partners = () => {
             </>
           )}
         </p>
-        <img className={styles.img} src={partnerElectroImg} alt="Partner Road" />
+        <img className={styles.img} src={Images.partnerElectroImg} alt="Partner Road" />
       </div>
-      
+       {/* Конец контента с текстом*/}
+
+       {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
         <h2 className={styles.title}>ОБЕСПЕЧЕНИЕ ЭЛЕКТРОЭНЕРГИЕЙ</h2>
         <div
@@ -87,6 +94,9 @@ const Partners = () => {
           <span className={styles.icon}></span>
         </div>
       </div>
+      {/*Конец дроп меню с заголовком */}
+
+      {/*Контент с текстом */}
       <div className={styles.content}>
         <p className={styles.text}>
           {sections[2] ? (
@@ -103,9 +113,11 @@ const Partners = () => {
             </>
           )}
         </p>
-        <img className={styles.img} src={partnerGasGivingImg} alt="Partner Gas" />
+        <img className={styles.img} src={Images.partnerGasGivingImg} alt="Partner Gas" />
       </div>
+        {/* Конец контента с текстом*/}
 
+        {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
         <h2 className={styles.title}>ГАЗОСНАБЖЕНИЕ</h2>
         <div
@@ -115,6 +127,9 @@ const Partners = () => {
           <span className={styles.icon}></span>
         </div>
       </div>
+      {/*Конец дроп меню с заголовком */}
+
+      {/*Контент с текстом */}
       <div className={styles.content}>
         <p className={styles.text}>
           {sections[3] ? (
@@ -132,9 +147,11 @@ const Partners = () => {
             </>
           )}
         </p>
-        <img src={partnerWarmGivingImg} alt="Partner Road" />
+        <img className={styles.img} src={Images.partnerWarmGivingImg} alt="Partner Road" />
       </div>
+      {/* Конец контента с текстом*/}
 
+      {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
         <h2 className={styles.title}>БЕСПЕРЕБОЙНАЯ ПОДАЧА ТЕПЛА</h2>
         <div
@@ -144,6 +161,9 @@ const Partners = () => {
           <span className={styles.icon}></span>
         </div>
       </div>
+       {/*Конец дроп меню с заголовком */}
+
+        {/*Контент с текстом */}
       <div className={styles.content}>
         <p className={styles.text}>
           {sections[4] ? (
@@ -161,10 +181,11 @@ const Partners = () => {
             </>
           )}
         </p>
-        <img src={partnerOwnCommunicationImg} alt="Partner Road" />
+        <img className={styles.img} src={Images.partnerOwnCommunicationImg}alt="Partner Road" />
       </div>
+        {/* Конец контента с текстом*/}
 
-
+      {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
         <h2 className={styles.title}>ВНЕШНИЕ КОММУНИКАЦИИ</h2>
         <div
@@ -174,6 +195,9 @@ const Partners = () => {
           <span className={styles.icon}></span>
         </div>
       </div>
+      {/*Конец дроп меню с заголовком */}
+
+      {/*Контент с текстом */}
       <div className={styles.content}>
         <p className={styles.text}>
           {sections[5] ? (
@@ -191,9 +215,11 @@ const Partners = () => {
             </>
           )}
         </p>
-        <img src={partnerClearBuildImg} alt="Partner Road" />
+        <img className={styles.img} src={Images.partnerClearBuildImg} alt="Partner Road" />
       </div>
+      {/* Конец контента с текстом*/}
 
+      {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
         <h2 className={styles.title}>ОЧИСТНОЕ СООРУЖЕНИЕ</h2>
         <div
@@ -203,6 +229,9 @@ const Partners = () => {
           <span className={styles.icon}></span>
         </div>
       </div>
+      {/*Конец дроп меню с заголовком */}
+
+      {/*Контент с текстом */}
       <div className={styles.content}>
         <p className={styles.text}>
           {sections[6] ? (
@@ -222,6 +251,9 @@ const Partners = () => {
           )}
         </p>
       </div>
+      {/* Конец контента с текстом*/}
+
+      {/*Футер*/}
     </>
   );
 }

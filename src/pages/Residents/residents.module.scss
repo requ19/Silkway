@@ -1,0 +1,53 @@
+$primary-color: #3498db;
+$font-family: 'Mont', sans-serif;
+$font-size: 16px;
+$title-color: rgb(170, 25, 48);
+$text-color: rgb(29, 53, 87);
+
+.title {
+    color: $title-color;
+    width: 327px;
+    height: 99px;
+    display: flex;
+    align-items: center;
+    font-family: $font-family;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+    margin-bottom: 21px;
+}
+
+.content {
+    margin: 0 auto;
+    margin-top: 8px;
+    width: 375px;
+    padding: 0 24px;
+}
+
+.logo_container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .slick-slide img {
+        width: 100%;
+        height: auto;
+        border: 1px solid rgb(205, 205, 205);
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.imgBox {
+    padding: 12px;
+    &:focus {
+        outline: none; 
+    }
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+}
