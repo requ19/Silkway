@@ -1,0 +1,83 @@
+$primary-color: #3498db;
+$font-family: Mont;
+$font-size: 16px;
+$title-color: rgb(170, 25, 48);
+$text-color: rgb(29, 53, 87);
+
+.dropdown_menu {
+  display: flex;
+  margin: 0 auto;
+  width: 375px;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &.active .icon::before,
+  &.active .icon::after {
+    transform: rotate(-135deg); 
+  }
+}
+
+.icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid $title-color;
+    border-right: 2px solid $title-color;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center; 
+  }
+  &::before {
+    top: -5px; 
+  }
+  &::after {
+    top: 5px;
+  }
+}
+
+.title {
+  color: $title-color;
+  font-family: $font-family;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: left;
+}
+
+.text {
+    color: $text-color;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.content {
+  margin: 0 auto;
+  margin-top: 8px;
+  width: 375px;
+  padding: 0 24px;
+}
+
+.contactInfoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px; 
+}
