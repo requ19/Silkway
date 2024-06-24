@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className={styless.header}>
       <nav className={styless.nav}>
-        <img src="logo.svg" alt="" />
+        <a href="/"><img src="logo.svg" alt="" /></a>
         <Burger active={menuActive} setActive={setMenuActive}/>
       </nav>
       <Sidebar active={menuActive} setActive={setMenuActive} />
