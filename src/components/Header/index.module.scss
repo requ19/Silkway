@@ -1,11 +1,12 @@
-.container {
+.header {
     margin: 0 auto;
-    width: 375px; 
+    // width: 375px
+    position: relative;
 }
 
 .nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;  
+    padding: 8px 24px;  
 }

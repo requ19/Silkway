@@ -6,7 +6,7 @@ import Sidebar from '../Sidebar';
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false)
   return (
-    <header className={styless.container}>
+    <header className={styless.header}>
       <nav className={styless.nav}>
         <img src="logo.svg" alt="" />
         <Burger active={menuActive} setActive={setMenuActive}/>
