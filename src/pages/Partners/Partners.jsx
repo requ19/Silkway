@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../../components/Header';
 import styles from './partners.module.scss';
 import Images from '../Images'
+import Footer from '../../components/Footer';
 
 const Partners = () => {
   // Инициализация массива состояний для каждого раздела
@@ -22,7 +23,7 @@ const Partners = () => {
       <Header />
         {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
-        <h2 className={styles.title}>НАШИ ТЕХНИЧЕСКИЕ ПАРТНЕРЫ</h2>
+        <p className={styles.title}>НАШИ ТЕХНИЧЕСКИЕ ПАРТНЕРЫ</p>
         <div
           className={`${styles.button} ${sections[0] ? styles.active : ''}`}
           onClick={() => toggleSection(0)}
@@ -53,7 +54,7 @@ const Partners = () => {
 
         {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
-        <h2 className={styles.title}>СТРОИТЕЛЬСТВО ДОРОГ И ТРАНСПОРТНЫХ КОММУНИКАЦИЙ</h2>
+        <p className={styles.title}>СТРОИТЕЛЬСТВО ДОРОГ И ТРАНСПОРТНЫХ КОММУНИКАЦИЙ</p>
         <div
           className={`${styles.button} ${sections[1] ? styles.active : ''}`}
           onClick={() => toggleSection(1)}
@@ -86,7 +87,7 @@ const Partners = () => {
 
        {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
-        <h2 className={styles.title}>ОБЕСПЕЧЕНИЕ ЭЛЕКТРОЭНЕРГИЕЙ</h2>
+        <p className={styles.title}>ОБЕСПЕЧЕНИЕ ЭЛЕКТРОЭНЕРГИЕЙ</p>
         <div
           className={`${styles.button} ${sections[2] ? styles.active : ''}`}
           onClick={() => toggleSection(2)}
@@ -119,7 +120,7 @@ const Partners = () => {
 
         {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
-        <h2 className={styles.title}>ГАЗОСНАБЖЕНИЕ</h2>
+        <p className={styles.title}>ГАЗОСНАБЖЕНИЕ</p>
         <div
           className={`${styles.button} ${sections[3] ? styles.active : ''}`}
           onClick={() => toggleSection(3)}
@@ -153,7 +154,7 @@ const Partners = () => {
 
       {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
-        <h2 className={styles.title}>БЕСПЕРЕБОЙНАЯ ПОДАЧА ТЕПЛА</h2>
+        <p className={styles.title}>БЕСПЕРЕБОЙНАЯ ПОДАЧА ТЕПЛА</p>
         <div
           className={`${styles.button} ${sections[4] ? styles.active : ''}`}
           onClick={() => toggleSection(4)}
@@ -187,7 +188,7 @@ const Partners = () => {
 
       {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
-        <h2 className={styles.title}>ВНЕШНИЕ КОММУНИКАЦИИ</h2>
+        <p className={styles.title}>ВНЕШНИЕ КОММУНИКАЦИИ</p>
         <div
           className={`${styles.button} ${sections[5] ? styles.active : ''}`}
           onClick={() => toggleSection(5)}
@@ -221,7 +222,7 @@ const Partners = () => {
 
       {/* Дроп меню с заголовком*/}
       <div className={styles.dropdown_menu}>
-        <h2 className={styles.title}>ОЧИСТНОЕ СООРУЖЕНИЕ</h2>
+        <p className={styles.title}>ОЧИСТНОЕ СООРУЖЕНИЕ</p>
         <div
           className={`${styles.button} ${sections[6] ? styles.active : ''}`}
           onClick={() => toggleSection(6)}
@@ -254,6 +255,7 @@ const Partners = () => {
       {/* Конец контента с текстом*/}
 
       {/*Футер*/}
+      <Footer/>
     </>
   );
 }

@@ -1,0 +1,123 @@
+$color: rgb(255, 255, 255);
+$font-family: Mont;
+
+.footer_container {
+        margin: 0 auto;
+        width: 330px;
+        height: 710px;
+        padding: 0 24px;
+        background: rgb(29, 53, 87);
+    .logo_container {
+        width: 136px;
+        height: 52px;
+        padding: 16px 0;
+        margin: 40px 0 19px 10px;
+    }
+    .footer_container .contacts_container  {
+        color: $color;
+        font-family: $font-family;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .pages_container  {
+        width: 216px;
+        height: 252px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px;
+      p {
+        cursor: pointer; 
+        color: rgba(255, 255, 255, 0.5);
+        font-family: $font-family;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+        padding: 10px;
+    }
+      .active {
+        color: $color;
+      }
+      
+    }
+
+    .contacts_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+
+        .numbers_container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            p:first {
+              grid-column: span 2; 
+            }
+            p {
+                color: $color;
+                width: 112px;
+                font-family: $font-family;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+      }
+
+      .sidebar__socials_list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: 23px;
+        height: 23px;
+        padding: 16px 0 0 10px;
+        margin-top: 12px;
+      }
+    h2 {
+        color: $color;
+        font-family: $font-family;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .sidebar__address {
+        width: 324px;
+        margin: 24px 0 24px 0;
+        align-items: start;
+        color: $color;
+        h2 {
+            margin: 20px 0 0 0;
+            padding: 0 0 0 10px;
+        } 
+        .sidebar__address_text {
+            color: $color;
+            font-family: $font-family;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin: 12px 0 0 0;
+            padding: 0 0 0 10px;
+        }
+    }
+    .info_title {
+        color: $color;
+        font-family: $font-family;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: underline;
+        padding: 0 0 0 10px;
+    }
+    
+  }
+  
+                

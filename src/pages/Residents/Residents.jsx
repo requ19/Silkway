@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './residents.module.scss';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer'
+
 import Images from '../Images';
 
 const Residents = () => {
@@ -20,12 +22,9 @@ const Residents = () => {
   return (
     <>
       {/*{Xэдер с заголовком} */}
-      <Header />
+      {/* <Header /> */}
       <div className={styles.content}>
-        <div className={styles.title}>
-          <h2>РЕЗИДЕНТЫ ИНДУСТРИАЛЬНОГО ПАРКА “SILK WAY”</h2>
-        </div>
-
+          <p className={styles.title}>РЕЗИДЕНТЫ ИНДУСТРИАЛЬНОГО ПАРКА “SILK WAY”</p>
         {/* Лого резидентов*/}
         <Slider className={styles.logo_container} {...settings}>
         <div className={styles.imgBox}>
@@ -40,6 +39,7 @@ const Residents = () => {
         </Slider>
       </div>
         {/* Футер*/}
+      <Footer/>
     </>
   );
 };

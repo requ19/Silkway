@@ -2,6 +2,7 @@ import { React, useState } from 'react';
 import Header from '../../components/Header';
 import styles from './residentialComplex.module.scss';
 import ContactInfo from '../../components/ContactInfo';
+import Footer from '../../components/Footer';
 
 const ResidentialComplex = () => {
     const [sections, setSections] = useState(Array(1).fill(false)); 
@@ -19,7 +20,7 @@ const ResidentialComplex = () => {
         <>
         <Header/>
             <div className={styles.dropdown_menu}>
-                <h2 className={styles.title}>ЖИЛОЙ КОМПЛЕКС “SILK WAY”</h2>
+                <p className={styles.title}>ЖИЛОЙ КОМПЛЕКС “SILK WAY”</p>
                 <div
                     className={`${styles.button} ${sections[0] ? styles.active : ''}`}
                     onClick={() => toggleSection(0)}
@@ -60,6 +61,7 @@ const ResidentialComplex = () => {
                     )}
                 </p>
             </div>
+            <Footer/>
         </>
     );
 };
