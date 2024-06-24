@@ -1,5 +1,6 @@
 /* Reset.scss */
 
+@import url('https://fonts.cdnfonts.com/css/mont');
 /* Убираем все отступы и поля */
 *,
 *::before,
@@ -17,7 +18,7 @@ html {
 
 body {
   margin: 0;
-  font-family: sans-serif; /* Устанавливает стандартный шрифт */
+  font-family: 'Mont', sans-serif;                                          
 }
 
 /* Удаляем стандартные стили заголовков */
